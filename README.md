@@ -1,6 +1,14 @@
 # Cuis-Smalltalk-RedrawWhenClicked
 An Mithril-inspired experiment to have Cuis morphs redraw when clicked or on other events
 
+Demo files:
+
+KfMithrilInspiredExperimentMorph.st : The first version sent to the list.
+
+KfMithrilInspiredExperimentMorph-v2.st : Adds rough first cut at support for subcomponents.
+
+====
+
 From an email I sent to the Cuis-Dev list:
 https://lists.cuis.st/mailman/archives/cuis-dev/2023-May/007403.html
 
