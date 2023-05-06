@@ -3,9 +3,11 @@ An Mithril-inspired experiment to have Cuis morphs redraw when clicked or on oth
 
 Demo files:
 
-KfMithrilInspiredExperimentMorph.st : The first version sent to the list.
+KfMithrilInspiredExperimentMorph-v1.st : The first version sent to the list.
 
-KfMithrilInspiredExperimentMorph-v2.st : Adds rough first cut at support for subcomponents.
+KfMithrilInspiredExperimentMorph-v2.st : Adds rough first cut at support for subcomponents with a button.
+
+KfMithrilInspiredExperimentMorph-v3.st : Adds an edit field using a subcomponent.
 
 ====
 
