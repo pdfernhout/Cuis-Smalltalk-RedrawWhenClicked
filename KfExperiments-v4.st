@@ -244,7 +244,7 @@ Object subclass: #KfFToCExperiment2Model
 	poolDictionaries: ''
 	category: 'KfExperiments'!
 
-!KfFToCExperiment2Model methodsFor: 'as yet unclassified' stamp: 'pdfernhout 5/13/2023 13:36:22'!
+!KfFToCExperiment2Model methodsFor: 'as yet unclassified' stamp: 'pdfernhout 5/13/2023 13:58:37'!
 buildMorph: builder
 
         "KfRebuiltWindow new openWith: KfFToCExperiment2Model new"
@@ -293,11 +293,12 @@ buildMorph: builder
 	builder morph layoutMorph 
 		addMorph: (builder namedSubmorph: #eF);
 		addMorph: (builder namedSubmorph: #b);
-		addMorph: (builder namedSubmorph: #eC).
+		addMorph: (builder namedSubmorph: #eC);
+		addMorph: (builder namedSubmorph: #advancedToggle).
 		
 	showAdvanced ifTrue: [ 
 		| k |
-		k := temperatureC + 273.15.
+		k := (temperatureC + 273.15) asFloat rounded.
 		builder 
 			namedSubmorph:	 #eK 
 			create: [SimpleNumberEntryMorph integerDefault: k maxNumChars: 9]

@@ -9,7 +9,7 @@ KfMithrilInspiredExperimentMorph-v2.st : Adds rough first cut at support for sub
 
 KfMithrilInspiredExperimentMorph-v3.st : Adds an edit field using a subcomponent.
 
-KFExperiments-v4.st: Includes a new builder pattern experiment with KfFToCExperiment2Model with a buildMorph: method, supported by KfMorphBuilder and KfRebuiltWindow. Launch the demo with: "KfRebuiltWindow new openWith: KfFToCExperiment2Model new". Demo currently has an updating issue where after clicking the convert button you need to click elsewhere in the window to see the new value. This filein also included the rppevious experiment plus an earlier unfinished experiment using the conventional observer/dependency pattern.
+KFExperiments-v4.st: Includes a new builder pattern experiment with KfFToCExperiment2Model with a buildMorph: method, supported by KfMorphBuilder and KfRebuiltWindow. Launch the demo with: "KfRebuiltWindow new openWith: KfFToCExperiment2Model new". Demo currently has an updating issue where after clicking the "Convert" button or "Show advanced" button you need to click elsewhere in the window to see the updated celcius value or the newly added input field. This filein also included the previous experiment plus an earlier unfinished experiment that uses the conventional observer/dependency pattern. KfMorphBuilder's morphToBuilderMap WeakValueDictionary is not currently used, but was intended for more genral support of builders used with any morph, not just a morph installed in a KfRebuiltWindow.
 
 ====
 
