@@ -11,6 +11,8 @@ KfMithrilInspiredExperimentMorph-v3.st : Adds an edit field using a subcomponent
 
 KFExperiments-v4.st: Includes a new builder pattern experiment with KfFToCExperiment2Model with a buildMorph: method, supported by KfMorphBuilder and KfRebuiltWindow. Launch the demo with: "KfRebuiltWindow new openWith: KfFToCExperiment2Model new". Demo currently has an updating issue where after clicking the "Convert" button or "Show advanced" button you need to click elsewhere in the window to see the updated celsius value or the newly added input field. This filein also included the previous experiment plus an earlier unfinished experiment that uses the conventional observer/dependency pattern. KfMorphBuilder's morphToBuilderMap WeakValueDictionary is not currently used, but was intended for more general support of builders used with any morph, not just a morph installed in a KfRebuiltWindow.
 
+KFExperiments-v5.st: Fixes updating issues in v4 (at a potential cost of more redrawing). Also adds initial layout support to builder. There is an issue with how the Panel morph gets resized when the Kelvin field is added and removed, where the show/hide  button and input field may extend beyond the boudaries of the Panel sometimes, and how the other fields may have their height adjusted. 
+
 ====
 
 From an email I sent to the Cuis-Dev list:
